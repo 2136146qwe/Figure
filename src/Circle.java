@@ -7,14 +7,12 @@ public class Circle extends Figure {
     }
 
     public double radius() {
-        double r = (a / 2);
-        return r;
+        return (a / 2);
     }
 
     @Override
     public double area() {
-        double s = (radius() * radius()) * PI;
-        return s;
+        return (radius() * radius()) * PI;
     }
 
     @Override

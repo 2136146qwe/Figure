@@ -4,7 +4,7 @@ public class Triangle extends Figure {
     private double c;
 
 
-    public Triangle(double a, double b, double c) {
+    public Triangle(String triangle, double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -16,13 +16,8 @@ public class Triangle extends Figure {
         this.c = size;
     }
 
-    public Triangle(String triangle, int b, int c) {
-        super();
-    }
-
     public double perimeter() {
-        double p = (a + b + c) / 2;
-        return p;
+        return (a + b + c) / 2;
     }
 
     @Override
@@ -38,8 +33,7 @@ public class Triangle extends Figure {
 
     @Override
     public String showInfo() {
-        String result = "Фигура: треугольник, площадь: " + area() + "ед.кв. Периметр = " + perimeter() + ". Цвет: " +
+        return "Фигура: треугольник, площадь: " + area() + "ед.кв. Периметр = " + perimeter() + ". Цвет: " +
                 colour() + ".";
-        return result;
     }
 }

@@ -19,14 +19,6 @@ public class Square extends Figure {
 
     @Override
     public String showInfo() {
-        String result = "Фигура: квадрат, площадь: " + area() + "ед.кв. Цвет " + colour() + ".";
-        return result;
+        return "Фигура: квадрат, площадь: " + area() + "ед.кв. Цвет " + colour() + ".";
     }
-
-    // @Override
-    // public int randomN() {
-    // int randomN = (int) (Math.random() * 10 + 1);
-    // return randomN;
-    // }
-    //
 }

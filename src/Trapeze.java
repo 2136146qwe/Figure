@@ -5,11 +5,13 @@ public class Trapeze extends Figure {
     private double c;
     private double d;
 
-    public Trapeze(double a, double b, double c, double d) {
+
+    public Trapeze(String Trapeze, double a, double b, double c, double d) {
         this.a = a;
         this.b = b;
         this.c = c;
         this.d = d;
+
     }
 
     public double high() {
@@ -17,14 +19,12 @@ public class Trapeze extends Figure {
         double y = d * d;
         double m = a - b;
         double v = ((m * m) + x - y) / (2 * m);
-        double h = Math.sqrt(x - v * v);
-        return h;
+        return Math.sqrt(x - v * v);
     }
 
     @Override
     public double area() {
-        double s = (a + b) / 2 * high();
-        return s;
+        return (a + b) / 2 * high();
     }
 
     @Override
@@ -34,9 +34,8 @@ public class Trapeze extends Figure {
 
     @Override
     public String showInfo() {
-        String result = "Фигура: трапеция, площадь: " + area() + "ед.кв. Высота =  " + high() + ". Цвет: " + colour() +
+        return "Фигура: трапеция, площадь: " + area() + "ед.кв. Высота =  " + high() + ". Цвет: " + colour() +
                 ".";
-        return result;
     }
 }
 

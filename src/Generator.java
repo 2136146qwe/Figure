@@ -13,10 +13,12 @@ public class Generator {
             case 0:
                 return new Circle("Circle", (double) number.nextInt(20));
             case 1:
-                return new Trapeze("Trapeze", (double) number.nextInt(20), (double) number.nextInt(20),
-                        (double) number.nextInt(20));
+                return new Trapeze("Trapeze", (double) number.nextInt(20),
+                        (double) number.nextInt(20),
+                        (double) number.nextInt(20), (double) number.nextInt(20));
             case 2:
-                return new Triangle("Triangle", number.nextInt(20), number.nextInt(20));
+                return new Triangle("Triangle", number.nextInt(20), number.nextInt(20),
+                        number.nextInt(20));
             case 3:
                 return new Square("Square", (double) number.nextInt(20));
             default:
