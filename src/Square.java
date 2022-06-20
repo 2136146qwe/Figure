@@ -1,8 +1,10 @@
+package src;
+
 public class Square extends Figure {
 
     private double a;
 
-    public Square(String square, double a) {
+    public Square(double a) {
         this.a = a;
     }
 

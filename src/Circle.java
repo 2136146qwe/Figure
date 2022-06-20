@@ -1,8 +1,10 @@
+package src;
+
 public class Circle extends Figure {
     private double a;
     private static final double PI = 3.14;
 
-    public Circle(String circle, double a) {
+    public Circle(double a) {
         this.a = a;
     }
 

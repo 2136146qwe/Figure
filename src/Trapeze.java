@@ -1,3 +1,4 @@
+package src;
 
 public class Trapeze extends Figure {
     private double a;
@@ -6,7 +7,7 @@ public class Trapeze extends Figure {
     private double d;
 
 
-    public Trapeze(String Trapeze, double a, double b, double c, double d) {
+    public Trapeze(double a, double b, double c, double d) {
         this.a = a;
         this.b = b;
         this.c = c;
